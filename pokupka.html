@@ -31,7 +31,6 @@
     />
     <link rel="manifest" href="source/files/faficon_io/site.webmanifest" />
   </head>
-
   <body>
     <header>
       <nav class="navbar navbar-expand-lg bg-dark">
@@ -80,66 +79,67 @@
     </header>
     <div class="container">
       <h1>Оформление заказа</h1>
-      <form action="register.php" method="post">
-        <div class="mb-3">
-          <label for="product_name" class="form-label"
-            >Наименование товара:</label
-          >
-          <input
-            type="text"
-            class="form-control"
-            id="product_name"
-            name="product_name"
-            placeholder="Название товара"
-            required
-          />
-        </div>
-        <div class="mb-3">
-          <label for="quantity" class="form-label">Количество:</label>
-          <input
-            type="number"
-            class="form-control"
-            id="quantity"
-            name="quantity"
-            placeholder="1,2,3.."
-            required
-          />
-        </div>
-        <div class="mb-3">
-          <label for="customer_name" class="form-label">Ваше имя:</label>
-          <input
-            type="text"
-            class="form-control"
-            id="customer_name"
-            name="customer_name"
-            placeholder="Имя"
-            required
-          />
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Ваш email:</label>
-          <input
-            type="email"
-            class="form-control"
-            id="email"
-            name="email"
-            placeholder="rgutis@mail.ru"
-            required
-          />
-        </div>
-        <div class="mb-3">
-          <label for="phone" class="form-label">Ваш номер телефона:</label>
-          <input
-            type="number"
-            class="form-control"
-            id="phone"
-            name="phone"
-            placeholder="+123456789"
-            required
-          />
-        </div>
-        <button type="submit" class="btn btn-primary">Отправить заказ</button>
-      </form>
+
+      <div class="mb-3">
+        <label for="product_name" class="form-label"
+          >Наименование товара:</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="product_name"
+          name="product_name"
+          placeholder="Название товара"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="quantity" class="form-label">Количество:</label>
+        <input
+          type="number"
+          class="form-control"
+          id="quantity"
+          name="quantity"
+          placeholder="1,2,3.."
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="customer_name" class="form-label">Ваше имя:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="customer_name"
+          name="customer_name"
+          placeholder="Имя"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Ваш email:</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          placeholder="rgutis@mail.ru"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Ваш номер телефона:</label>
+        <input
+          type="number"
+          class="form-control"
+          id="phone"
+          name="phone"
+          placeholder="+123456789"
+          required
+        />
+      </div>
+      <button type="submit" id="submit-btn" class="btn btn-primary">
+        Отправить заказ
+      </button>
     </div>
     <footer class="mt-4">
       <div class="container-fluid">
@@ -166,5 +166,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
